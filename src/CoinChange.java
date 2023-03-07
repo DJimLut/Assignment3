@@ -15,7 +15,7 @@
         throw new UnsupportedOperationException();
     }
 
-    public void Main( String[] args) {
+    public void Main( String[] args ) {
         // TODO: Implement main method
     }
  }
