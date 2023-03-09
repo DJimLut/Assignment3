@@ -5,6 +5,7 @@
  */
 
 package main;
+
 import static java.util.Arrays.*;
 
 public class CoinChange {
