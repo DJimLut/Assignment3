@@ -1,4 +1,4 @@
-package main.tests;
+package tests;
 
 import static main.CoinChange.*;
 import static org.junit.Assert.*;
