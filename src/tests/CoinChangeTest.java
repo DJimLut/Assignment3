@@ -17,12 +17,23 @@ public class CoinChangeTest {
     }
 
     @Test
-    public void assertOneCoin() {
+    public void assertOneCoinGreedy() {
         int[] coinValues = { 50, 25, 10, 5, 1 };
         int change = 1;
         
         int expected = 1;
         int actual = coinChangeGreedy( coinValues, change );
+
+        assertSame( expected, actual );
+    }
+
+    @Test
+    public void assertOneCoinDP() {
+        int[] coinValues = { 50, 25, 10, 5, 1 };
+        int change = 1;
+
+        int expected = 1;
+        int actual = coinChangeDP( coinValues, change );
 
         assertSame( expected, actual );
     }
@@ -61,12 +72,23 @@ public class CoinChangeTest {
     }
 
     @Test
-    public void assertCoinsSample() {
+    public void assertCoinsSampleGreedy() {
         int[] coinValues = { 9, 6, 5, 1 };
         int change = 11;
         
         int expected = 3;
         int actual = coinChangeGreedy( coinValues, change );
+
+        assertSame( expected, actual );
+    }
+
+    @Test
+    public void assertCoinsSampleDP() {
+        int[] coinValues = { 9, 6, 5, 1 };
+        int change = 11;
+
+        int expected = 2;
+        int actual = coinChangeDP( coinValues, change );
 
         assertSame( expected, actual );
     }
